@@ -7,7 +7,7 @@ int main()
     int size;
     cout<<"Enter array size :: "<<endl;
     cin>>size;
-    int i,a[50],sum=0;
+    int i,a[size],sum=0;
         cout<<"Enter array elements :: "<<endl;
 
         for(i=0; i<size; i++)
