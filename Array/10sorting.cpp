@@ -6,9 +6,9 @@ using namespace std;
 int main()
 {
     int size;
-    cout<<"Enter array size( Max:50 ) :: "<<endl;
+    cout<<"Enter array size :: "<<endl;
     cin>>size;
-        cout<<"\nEnter array elements :: "<<endl;
+        cout<<"Enter array elements :: "<<endl;
 int a[size];
         for(int i=0; i<size; i++)
         {
