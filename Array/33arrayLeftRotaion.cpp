@@ -13,7 +13,7 @@ int gcd(int a, int b)
 		return gcd(b, a % b);
 }
 
-/*Function to left rotate arr[] of siz n by d*/
+// Function to left rotate arr[] of size n by d times 
 void leftRotate(int arr[], int d, int n)
 {
 	/* To handle if d >= n */
