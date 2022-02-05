@@ -2,13 +2,11 @@
 using namespace std;
 string capitalFirstChar(string str){
     int l = str.length();
-    int val = 'a'-'A' ;
+    int val = 'a' - 'A' ;
     for(int i=0;i<l;i++){
-        if(str[i]>=65 && str[i]<=97){
-            if(i=0){
-                str[i]=str[i]-val;
-            }
-            else if(str[i-1]==' '){
+        if(str[i]>=97 && str[i]<=122)
+        {
+            if(str[i-1]==' ' || i==0){
             str[i]=str[i]-val;
             }
         }
