@@ -1,10 +1,5 @@
-// C++ Program to check whether
-// a number is Duck Number or not.
 #include <iostream>
 using namespace std;
-
-// Function to check whether
-// given number is duck number or not.
 bool check_duck(string num)
 {
 	// Ignore leading 0s

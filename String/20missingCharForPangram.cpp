@@ -30,7 +30,7 @@ string missingChars(string str)
 int main()
 {
 	string str = "The quick brown fox jumps "
-				"over the lazy dog";
+				"over the  dog";
 	cout << missingChars(str);
 	return 0;
 }	

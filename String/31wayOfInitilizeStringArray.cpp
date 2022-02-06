@@ -53,7 +53,6 @@ int main()
 int main()
 {
 	// Initialize array
-
 	array<string, 4> colour { "Hello", "Rustam", "Shohrab","Armaan" };
 
 	for (int i = 0; i < 4; i++)

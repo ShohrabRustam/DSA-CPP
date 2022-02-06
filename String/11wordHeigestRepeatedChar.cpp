@@ -1,39 +1,40 @@
 #include <iostream>
 using namespace std;
 
-string higestRepeatingChar(string str) {
+string higestRepeatingChar(string str) 
+{
 
-	int str_size = str.length();
+	int l = str.length();
 	int ctr1 = 0, ctr2 = 0, high1 = 0, high2 = 0;
 	int start = -1, end = 0;
 	int temp1, temp2;
-	char letter;
+	char character;
 
-	for (int x = 0; x < str_size; x++, end++)
+	for (int i = 0; i < l; i++, end++)
 	{
 		if (start == -1) 
 		{
-			start = x;
+			start = i;
 		}
 
-		if (str[x] == ' ' || x == str_size-1)
+		if (str[i] == ' ' || i == l-1)
 		{
-			if (end == str_size - 1)
+			if (end == l - 1)
 			{
 				end += 1;
 			}
 
-			for (int y = start; y < end; y++)
+			for (int j = start; j < end; j++)
 			{
-				letter = str[y];
+				character = str[j];
 
-				for (int z = start; z < end; z++)
+				for (int k = start; k < end; k++)
 				{
-					if (y == z)
+					if (j == k)
 					{
 						continue;
 					}
-					else if (letter == str[z])
+					else if (character == str[k])
 					{
 						ctr1++;
 					}
