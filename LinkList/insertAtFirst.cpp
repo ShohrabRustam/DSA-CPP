@@ -27,7 +27,7 @@ class LinkList
         }
     }
 
-    void printList(Node * n){
+    void printList(){
         Node *temp = this->head;
         if(this->head==NULL)
         {
@@ -39,7 +39,8 @@ class LinkList
                 if(temp==head){
                     cout<<temp->data;
                 }
-                else{
+                else
+                {
                 cout <<"->"<<temp->data;
                 }
                 temp= temp->next;
@@ -48,3 +49,9 @@ class LinkList
         }
     }
 };
+int main(){
+        LinkList list;
+        list.insertAtFirst();
+        list.insertAtFirst();
+        list.printList();
+}
