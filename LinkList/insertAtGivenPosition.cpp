@@ -140,9 +140,13 @@ class LinkList
          if(pos<1 || pos>numberofNodes+1){
              cout <<pos<<" position is not correct "<<endl;
          }
+         if(pos==1){
+             newNode->next=this->head;
+             this->head=newNode;
+         }
          else{
                 Node *temp= this->head;
-                for(int i=1;i<pos;i++){
+                for(int i=1;i<pos-1;i++){
                     temp=temp->next;
                 } 
                 newNode->next=temp->next;
@@ -158,14 +162,16 @@ class LinkList
 int main(){
         LinkList list;
         list.insertAtFirst();
-        cout <<list.count()<<endl;
+        // cout <<list.count()<<endl;
         list.insertAtFirst();
-        cout<<list.count()<<endl;
+        // cout<<list.count()<<endl;
         list.printList();
-        list.deleteAtFirst();
-        cout <<list.count()<<endl;
+        // list.deleteAtFirst();
+        // cout <<list.count()<<endl;
         list.printList();
         list.insertAtLast();
-        cout<<list.count()<<endl;
+        // cout<<list.count()<<endl;
+        list.printList();
+        list.insertAtGivenPosition();
         list.printList();
 }

@@ -145,6 +145,4 @@ int main(){
         list.insertAtLast();
         cout<<list.count()<<endl;
         list.printList();
-        
-
 }
