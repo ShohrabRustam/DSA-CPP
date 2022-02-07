@@ -166,6 +166,9 @@ void deleteAtGivenPosition(){
     else if(pos==1){
         deleteAtFirst();
     }
+    else if(pos==numberofNodes){
+        deleteAtLast();
+    }
     else{
             Node *temp = this->head;
             for(int i=1;i<pos-1;i++){
@@ -175,6 +178,7 @@ void deleteAtGivenPosition(){
             temp->next=temp->next->next;
             cout <<deleteNode->data<<" deleted Sucessfully !! "<<endl;
             delete deleteNode;
+            numberofNodes--;
     }
 }
      int count(){
