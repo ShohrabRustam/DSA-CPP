@@ -29,6 +29,7 @@ class LinkList
         }
     }
     
+    
     void deleteAtFirst(){
         if(this->head ==NULL){
             cout <<"The list already Empty !! "<<endl;
@@ -42,6 +43,26 @@ class LinkList
         }
     }
 
+    void insertAtLast(){
+        cout <<"Enter the value what you want you want to insert at Last !! "<<endl;
+        int n;
+        cin >>n;
+       Node *newNode = new Node(n);
+       Node * temp = this->head;
+       if(this->head==NULL){
+           this->head = newNode;
+       }
+       else
+       {
+            while(temp->next!=NULL)
+            {
+                temp = temp->next;
+            }
+            temp->next=newNode;
+       }
+       cout <<n <<" : insert SucessFully at Last !! "<<endl;
+       
+    }
     void printList(){
         Node *temp = this->head;
         if(this->head==NULL)
@@ -73,4 +94,7 @@ int main(){
         list.printList();
         list.deleteAtFirst();
         list.printList();
+        list.insertAtLast();
+        list.printList();
+
 }
