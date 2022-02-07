@@ -168,7 +168,7 @@ void deleteAtGivenPosition(){
     }
     else{
             Node *temp = this->head;
-            for(int i=1;i<pos;i++){
+            for(int i=1;i<pos-1;i++){
                 temp=temp->next;
             }
             Node *deleteNode=temp->next;
