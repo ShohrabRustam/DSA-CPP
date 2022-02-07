@@ -12,7 +12,7 @@ public : Node(int val ){
 class LinkList
 {
     public : Node * head = NULL;
-
+    public: static int count;
     void insertAtFirst(){
         cout <<"Enter the value you want to insert at First "<<endl;
         int n;
