@@ -12,7 +12,22 @@ public : Node(int val ){
 class LinkList
 {
     public : Node * head = NULL;
-   void printList(){
+
+    void insertAtFirst(){
+        cout <<"Enter the value you want to insert at First "<<endl;
+        int n;
+        cin >>n;
+        Node * newNode =  new Node(n);
+        if(this->head==NULL){
+            this->head= newNode;
+        }
+        else{
+            newNode->next=this->head;
+            this->head=newNode;
+        }
+    }
+
+    void printList(Node * n){
         Node *temp = this->head;
         if(this->head==NULL)
         {
@@ -24,8 +39,7 @@ class LinkList
                 if(temp==head){
                     cout<<temp->data;
                 }
-                else
-                {
+                else{
                 cout <<"->"<<temp->data;
                 }
                 temp= temp->next;
